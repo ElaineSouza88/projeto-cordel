@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* Fonte para h1 */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); 
+
+/* Fonte para texto */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+header > h1 {
+    background-color: black;
+    color: white;
+    font-family: 'Passion One', 'Times New Roman', Times, serif;
+
+    /* Para ajutar o texto de acordo com o tamanho de tela do dispositivo, podemos usar os elementos 
+    vh --> Viewport Height (Altura) e 
+    vw --> Viewport Width (Largura) */
+
+    font-size: 8vw;
+    text-align: center;
+    padding: 40px 0px 0px ;
+    margin: 0px;
+}
+header > p {
+    background-color: black;
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px 0px 40px;
+    margin: 0px;
+}
+
+
+section {
+    padding-top: 4.5vh;
+    padding-bottom: 4.5vh;
+    padding-left: 25px;
+    line-height: 2em;
+    font-family: 'Sriracha', 'Times New Roman', Times, serif;
+    font-size: 3vw;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.imagem > p {
+    color: white;
+    display: inline-block;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.623);
+    text-shadow: 4.5px 0px 3px black;
+}
+section#img001 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img002 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 2.5vh;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer > p {
+    margin: 0px 2px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 255, 213, 0.712);
+    border-radius: 5px;
+    padding: 0px 3px;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
